@@ -1,0 +1,283 @@
+
+$greyFont: #424242; 
+@mixin divSections() {
+	border: 5px solid pink;
+	max-width: 100%;
+	color: $greyFont;
+}
+@mixin fontSize(){
+	h1{ font-size: 65px; }
+	h2{ font-size: 36px; }
+	p{ font-size: 20px; }
+}
+@mixin fontFormat{
+	h1 {
+		position: relative;
+		top: 20px;
+		padding-top: 0px;
+		width: 168px;
+	}
+	h2 {
+		color: $greyFont;
+		margin: 0;
+		width: 495px;
+	}
+	p {	position: relative;
+		bottom: -25px;
+		color: $greyFont;
+		margin: 0;
+		width: 495px;
+	}
+}
+@mixin phone {
+	@media screen and (min-width: 480px) {
+		@content;
+	}
+}
+
+@mixin landscape {
+	@media screen and (min-width: 660px) {
+		@content;
+	}
+}
+
+
+@mixin orangeBackground {
+	background: #ffcc33; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #ffcc33 3%, #fca400 99%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(3%,#ffcc33), color-stop(99%,#fca400)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  #ffcc33 3%,#fca400 99%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  #ffcc33 3%,#fca400 99%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  #ffcc33 3%,#fca400 99%); /* IE10+ */
+    background: linear-gradient(45deg,  #ffcc33 3%,#fca400 99%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc33', endColorstr='#fca400',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    color: #222;
+}
+
+
+#nav {
+	#logo { 
+		h1 {
+		    text-decoration: none;
+			color: #424242;
+			}
+		text-decoration: none;
+		margin: 0;
+		}
+	.container { 
+	margin: 35px 180px;
+	}
+	display: inline-block;
+	background: orange;
+	position: fixed;
+    width: 100%;
+    top: 0; 
+    height: 160px; 
+    background-color:#fff;
+    z-index:150;
+    h1 {
+    	font-size: 38px;
+    	font-weight: bold;
+    	padding: 0;
+    	width: 200px;
+    	margin: 0;
+    }
+    p {
+    	border-bottom: 1px solid orange;
+    	padding: 0;
+    	width: 68px;
+    	margin: 0 0 0 110px;
+    	position: relative;
+    	bottom: 8px;
+    }
+   	ul {
+   	    text-align: right;
+	    list-style: none;
+		margin: 0;
+		padding: 0px;
+		position: relative;
+		bottom: 28px;
+	    li {
+			display: inline;
+			margin: 10px;
+		}
+   		a, a:visited {
+			text-decoration: none;
+			color: #424242;
+			}
+    a:hover {
+   		color: #8e8e8e;
+   		}
+	}
+}
+
+
+#intro {
+	.container { 
+		max-width: 100%;
+		height: auto;
+		margin: 300px 180px;
+		text-align: center;
+		@include phone {
+			text-align: left;
+		}
+	}
+	height: 750px;
+	max-width: 100%;
+	border: 3px solid #ffcc33;
+	@include orangeBackground;
+	@include fontSize;
+	@include fontFormat;
+	h1 {
+		text-shadow:0 1px 3px rgba( 66, 66, 66, .18);
+	}
+	.codingsign {  
+		color: rgba(0, 0, 0, 0.2);
+    	font-size: 350px;
+    	height: 220px;
+    	line-height: 220px;
+  		text-align: right;
+    	margin: -260px 0;
+    	}
+}
+
+
+#skills {
+	height: 200px;
+	background: white;
+	@include fontSize;
+	@include fontFormat;
+	.container { 
+		position: relative;
+		height: auto;
+		margin: 125px 180px;
+	}
+	h1 {
+		color: $greyFont;
+		width: 450px;
+		position: relative;
+		top: 15px;
+	}
+	h2{
+		color: $greyFont;
+		position: relative;
+		bottom: 12px;
+
+	}
+	p {
+		position: relative;
+		bottom: -12px;
+		color: $greyFont;
+		width: 1000px;
+	}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#icons {
+	@include divSections;
+	background: white;
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 5%;
+	font-size: 12px;
+	text-align: center;
+
+		#appIcon { border: 2px solid yellow;}
+		img {
+			height: 100px;
+			max-width: 100%;
+		}
+		#gallery {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+		li {
+			height: 144px;
+			background: navy;
+			float: left;
+			width: 45%;
+			margin: 2.5%;
+				h2 {
+					color: $greyFont;
+					margin: 0;
+					padding: 5%;
+				}
+			@include phone {
+				width: 20%;
+				margin: 5% 0;
+				height: 200px;
+
+			}
+		}
+
+	}
+
+
+
+
+
+
+
+
+
+#contact-content {
+	clear: both;
+	.container { 
+	text-align: center;
+		height:300px;
+		margin: 35px 180px;
+		border: 3px solid orange;
+	}
+	@include divSections;
+	background: gray;
+	}
+
+
+#contact-form {
+	.container { 
+		height: auto;
+		margin: 35px 180px;
+		border: 3px solid orange;
+	}
+	@include divSections;
+	background: gray;
+	}
+
+
+#footer {
+	@include divSections;
+	background: gray;
+	clear: both;
+		.social-icon {
+			width: 20px;
+			height: 20px;
+			margin: 0 5px;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kaitlyn  La | Web Developer</title>
+		<link rel="stylesheet" href="stylesheets/styles.css" type="text/css">
+	</head>
+	<body>
+<!-- NAVIGATION -->
+		<div id="nav">
+			<div class="container">
+			<!-- LOGO-->
+				<a href='index.html' id='logo'>
+					<h1>Kaitlyn La</h1>
+					<p>DBC boot</p>
+				</a>
+				<ul>
+					<li><a href="#intro">About Me</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#projects">Projects</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a href="blog">Blog</a></li>
+				</ul>
+			</div>
+		</div>
+<!-- INTRO -->
+		<div id="intro">
+			<div class="container">
+				<h1><span style="color: white">Hello!</span></h1>
+				<h2>I'm Kate,<br> your <i style="color: white">new</i> favorite programmer.</h2>
+				<p>I'm a full stack developer based in San Jose, California with a passion for all things technology.</p>
+				<br>
+				<div class="codingsign">#{}</div>
+			</div>
+		</div>
+<!-- SKILLS -->
+		<div id="skills">
+			<div class="container">
+				<h1><span style="color:orange">Skillset</span></h1>
+				<h2>Developer in the making<span style="color:orange; letter-spacing:6px">...</span></h2>
+				<p>My journey has just begun, check back in 9 weeks and be prepared to be astounded.</p>
+			</div>
+
+<!-- ICONS -->
+		</div>
+		<div id="icons">
+			<!-- <div class="container"> -->
+				<ul id='gallery'>
+					<li>
+					<div id='appIcon'>
+						<img src="imgs/ror.png">
+						<h2>Ruby on Rails</h2>
+					</div>
+					</li>
+				    <li>
+				    <div id='appIcon'>
+				    	<img src="imgs/git.png">
+				    	<h2>Git & Source Control</h2>
+				    </div>
+				    </li>
+					<li>
+					<div id='appIcon'>
+						<img src="imgs/agile.png">
+						<h2>Agile Development</h2>
+					</div>
+					</li>
+					<li>
+					<div id='appIcon'>
+						<img src="imgs/html.png">
+						<h2>HTML5</h2>
+					</div>
+					</li>
+					<li>
+					<div id='appIcon'>
+						<img src="imgs/css.png">
+						<h2>CSS</h2>
+					</div>
+					</li>
+					<li>
+					<div id='appIcon'>
+						<img src="imgs/js.png">
+						<h2>JavaScript</h2>
+					</div>
+					</li>
+					<li>
+					<div id='appIcon'>
+						<img src="imgs/jq.png">
+						<h2>JQuery</h2>
+					</div>
+					</li>
+					<li>
+					<div id='appIcon'>
+						<img src="imgs/sass.png">
+						<h2>Sass</h2>
+					</div>
+					</li>
+					<li>
+					<div id='appIcon'>
+						<img src="imgs/sql.png">
+						<h2>Sqlite3</h2>
+					</div>
+					</li>
+					<li>
+					<div id='appIcon'>
+						<img src="imgs/mysql.png">
+						<h2>MySql</h2>
+					</div>
+					</li>
+				</ul>
+	<!-- 		</div> -->
+		</div>
+<!-- PROJECTS -->
+<!-- CONTACT -->
+		<div id='contact-content'>
+<!-- 			<div class="container"> -->
+				<h1>Contact me!</h1>
+				<h2>Leave a message.</h2>
+				<p>Or follow me on your favorite social network!</p>
+<!-- 			</div> -->
+		</div>
+		<div id="contact-form">
+			<div class="container">
+				<form action='contact.php' method="post" id="form" onSubmit="MM_validateForm('name','','R','message','','R');return document.MM_returnValue">
+	                <input name="name" type="text" id="name" placeholder="Name">
+	                <input type="email" name="email" id="email" placeholder="Email">
+	                <textarea name="message" rows="6" class="message" id="message" placeholder="How can I help you?"></textarea>
+	                <input type="submit" class="inactive" id="submit" onClick="MM_validateForm('name','','R','message','','R');return document.MM_returnValue" value="Send message">
+	            </form>
+	        </div>
+		</div>
+<!-- FOOTER --> 
+        <div id="footer" align="center">
+	        <div class="container">
+	          <a href="https://twitter.com/KaitlynLa1" class='social-icon'><img src="imgs/twitter-wrap.png" alt="Twitter Logo"></a>
+	              <a href="https://www.facebook.com/kaitlyn.la" class='social-icon'><img src="imgs/facebook-wrap.png" alt="Facebook Logo"></a>
+	              <p>&copy; 2014 Kaitlyn La.</p>
+	        </div>
+        </div>
+ 	 </body>
+<!-- 	SCRIPT -->
+	<script src="scripts/script.js">
+</html>
