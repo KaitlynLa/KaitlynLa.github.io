@@ -10,7 +10,7 @@
   #nav #logo {
     text-decoration: none;
     margin: 0; }
-    #nav #logo h1 {
+    #nav #logo h1, #nav #logo p {
       text-decoration: none;
       color: #424242; }
   #nav .container {
@@ -148,17 +148,19 @@
     width: 1000px; }
 
 #icons {
-  border: 5px solid pink;
-  max-width: 100%;
-  color: #424242;
   background: white;
   width: 940px;
+  height: 600px;
   margin: 0 auto;
   padding: 0 5%;
   font-size: 12px;
   text-align: center; }
-  #icons #appIcon {
-    border: 2px solid yellow; }
+  #icons .container {
+    width: 1000px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 75px; }
   #icons img {
     height: 100px;
     max-width: 100%; }
@@ -167,11 +169,9 @@
     padding: 0;
     list-style: none; }
   #icons li {
-    height: 144px;
-    background: navy;
-    float: left;
-    width: 45%;
-    margin: 2.5%; }
+    margin: 0;
+    padding: 0;
+    float: left; }
     #icons li h2 {
       color: #424242;
       margin: 0;
@@ -183,32 +183,45 @@
         height: 200px; } }
 
 #contact-content {
-  clear: both;
-  border: 5px solid pink;
-  max-width: 100%;
-  color: #424242;
-  background: gray; }
+  background: #424242;
+  clear: both; }
+  #contact-content h1 {
+    font-size: 65px; }
+  #contact-content h2 {
+    font-size: 36px; }
+  #contact-content p {
+    font-size: 20px; }
   #contact-content .container {
-    text-align: center;
+    text-align: left;
+    height: 600px;
+    width: 600px;
     height: 300px;
-    margin: 35px 180px;
-    border: 3px solid orange; }
+    margin: 35px 180px; }
 
 #contact-form {
-  border: 5px solid pink;
-  max-width: 100%;
-  color: #424242;
-  background: gray; }
+  display: inline-block;
+  height: 900px;
+  widht: 336px; }
+  #contact-form #submit {
+    height: 45px;
+    width: 400px; }
+  #contact-form #name {
+    height: 45px;
+    width: 429px; }
+  #contact-form #email {
+    height: 45px;
+    width: 429px; }
+  #contact-form .message {
+    height: 150px;
+    width: 429px; }
   #contact-form .container {
-    height: auto;
+    float: left;
+    width: 337px;
     margin: 35px 180px;
     border: 3px solid orange; }
 
 #footer {
-  border: 5px solid pink;
-  max-width: 100%;
-  color: #424242;
-  background: gray;
+  background: #424242;
   clear: both; }
   #footer .social-icon {
     width: 20px;
